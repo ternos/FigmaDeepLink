@@ -1,0 +1,18 @@
+{
+    "name": "Figma Deep Link  ",
+    "description" : "Chrome extension that makes deep link from Browser to Figma app on your device",
+    "version": "0.1",
+    "manifest_version": 2,
+    "browser_action": {
+      "default_icon": "icon.png"
+    },
+    "content_scripts": [
+        {
+          "matches": ["http://*/*", "https://*/*"],
+          "js": ["figmadeeplink.js"]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
